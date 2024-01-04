@@ -1,0 +1,76 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFA500 !important;
+
+}
+  
+  .navbar {
+    background-color: #343a40 !important; 
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-link {
+    color: #ffffff !important;
+    font-size: 1.2rem;
+  }
+  
+  header {
+    background-color: #fdebba;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  header p {
+    font-size: 1.5rem;
+  }
+  
+  section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  .card {
+    border: none;
+    transition: transform 0.3s;
+    width: auto;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    width: auto;
+  }
+  
+  .footer {
+    background-color: #343a40;
+    color: #ffffff;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    background-color: #FFA500 !important;
+    padding: 5px;
+    border-radius: 50%;
+  }
+
+  
+
+  
+  
+  
+  
+  

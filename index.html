@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CatMania</title>
+    <link rel="icon" type="image/x-icon" href="Assets/catmania.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<!-- I have an external CSS as well for the body but I opted to put the carrousel one here -->
+<style> 
+
+body {
+    background: #ebebeb;
+  }
+  h2 {
+    color: #696969;
+    font-size: 26px;
+    font-weight: 300;
+    text-align: center;
+    position: relative;
+    margin: 40px 70px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+  }
+  h2::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    margin: 0 auto;
+    height: 1px;
+    border-radius: 1px;
+    background: #d4d4d4;
+    left: 0;
+    right: 0;
+    bottom: 45px;
+  }
+  h2 span {
+    display: inline-block;
+    padding: 0 25px;
+    background:#ebebeb;
+    position:relative;
+    z-index:2;
+  }
+  .carousel {	
+    margin: 0 auto;
+    padding: 0 68px;
+  }
+  .carousel .carousel-item {
+    text-align: center;
+    overflow: hidden;
+    height: 160px;
+  }
+  .carousel .carousel-item .img-box {
+    background: #fff;
+    padding: 9px;
+    box-shadow: 0 6px 20px -6px rgba(0,0,0,0.4);
+  }
+  .carousel .carousel-item img {
+    margin: 0 auto;
+  }
+  .carousel-control-prev, .carousel-control-next {
+    width: 68px;
+    background: none;
+  }
+  .carousel-control-prev i, .carousel-control-next i {
+    font-size: 28px;
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    margin-top: -15px;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+  }
+  .carousel-indicators {
+    bottom: -40px;
+   background:  #FFA500 !important
+  }
+  .carousel-indicators li, .carousel-indicators li.active {
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 50%;
+    margin: 1px 4px;
+    box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+  }
+  .carousel-indicators li {	
+    background: #999;
+    border-color: transparent;
+  }
+  .carousel-indicators li.active {
+    background: #555;
+  }
+
+
+
+
+</style>
+   
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="Assets/catmania.png" alt="Logo" class="mr-2" width="200" height="100"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tribute.html">Tribute</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <header class="text-white text-center py-5">
+      <div class="container">
+        <img src="Assets/bongo.png" alt="ohmygah" class="mb-4" width="200" height="200">
+        <font color = "#000" > <h1 class="display-4" >Welcome to CatMania!!!!!</h1>  </font>
+        <font color = "#000" > <p class="lead">We LOVE cats, this website is dedicated to giving love to cute cats.</p></font>
+      </div>
+    </header>
+
+    <div class="container-xl">
+      <div class="row">
+        <div class="col-md-9  mx-auto">
+          <h2><span>Random <b>Cute Cats</b></span></h2>
+          <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+            
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>   
+            
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-sm-4"><div class="img-box"><img src="Assets/bokchoy.jpg" class="img-fluid" alt=""></div></div>
+                  <div class="col-sm-4"><div class="img-box"><img src="Assets/cahrlie.jpg" class="img-fluid" alt=""></div></div>
+                  <div class="col-sm-4"><div class="img-box"><img src="Assets/john.jpg" class="img-fluid" alt=""></div></div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-sm-4"><div class="img-box"><img src="Assets/lazarus.jpg" class="img-fluid" alt=""></div></div>
+                  <div class="col-sm-4"><div class="img-box"><img src="Assets/mark.jpg" class="img-fluid" alt=""></div></div>
+                  <div class="col-sm-4"><div class="img-box"><img src="Assets/look.jpg" class="img-fluid" alt=""></div></div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-sm-4"><div class="img-box"><img src="Assets/sage.jpg" class="img-fluid" alt=""></div></div>
+                  <div class="col-sm-4"><div class="img-box"><img src="Assets/soul.jpg" class="img-fluid" alt=""></div></div>
+                  <div class="col-sm-4"><div class="img-box"><img src="Assets/spirit.jpg" class="img-fluid" alt=""></div></div>
+                </div>
+              </div>
+            </div>
+            
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+              <i class="fa fa-chevron-left"></i>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+              <i class="fa fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <section class="background">
+      <div class="container">
+        <font color = "#000" > <h2 class="text-center mb-4">Cats Of The Day</h2> </font>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Dora</h5>
+                <img src="Assets/Dora.jpg" alt="Doracat" width="300" height="300">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Ellie</h5>
+                <img src="Assets/Ellie.jpg" alt="Elliecat" width="300" height="300">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Maxy</h5>
+                <img src="Assets/Maxy.jpg" alt="Maxycat" width="300" height="300">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Keqing</h5>
+                <img src="Assets/Keqing.jpg" alt="Keqing" width="300" height="300">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Venti</h5>
+                <img src="Assets/Venti.jpg" alt="Venticat" width="300" height="300">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Yae</h5>
+                <img src="Assets/Raiden.jpg" alt="Raidencat" width="300" height="300">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <p>&copy; 2024 CatMania. All rights reserved.</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/CatMania" target="_blank"><img src="Assets/facebook.svg" alt="Facebook"></a>
+          <a href="https://twitter.com/CatMania" target="_blank"><img src="Assets/twitter.svg" alt="Twitter"></a>
+          <a href="https://instagram.com/Catmania" target="_blank"><img src="Assets/instagram.svg" alt="Instagram"></a>
+          
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
